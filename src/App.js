@@ -84,7 +84,7 @@ class App extends Component {
       <Particles params={particelOps} style={{
                 width: '100%',height:'100%'}}/>
         <CardImgOverlay>
-        <h1 className="App-title">Maggic eggs</h1>
+        <h1 className="App-title">Magic eggs</h1>
         <div>
           <br/>
           <Exemple/>
