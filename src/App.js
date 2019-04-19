@@ -5,6 +5,9 @@ import Recipes from './components/Recipes';
 import Particles from 'react-particles-js';
 import { Card, CardImgOverlay, CardImg } from 'reactstrap';
 
+import Exemple from './Card.js';
+import Reload from './Reload';
+
 const APP_ID ="59a70ad4";
 const APP_KEY = "e277ba5dd5d7330c9716948c3fc87001";
 
@@ -53,7 +56,7 @@ class App extends Component {
 
     const valueSearch = e.target.elements.searchname.value;
 
-    await fetch(`https://api.edamam.com/search?q=${valueSearch}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=12`)
+    await fetch(`https:// easteregg.wildcodeschool.fr/api=${valueSearch}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=12`)
     .then(response =>  response.json())
     .then(resData => this.setState({hitsArray: resData.hits},
       console.log(resData.hits))
@@ -81,11 +84,15 @@ class App extends Component {
       <Particles params={particelOps} style={{
                 width: '100%',height:'100%'}}/>
         <CardImgOverlay>
-        <h1 className="App-title">Hello Toi</h1>
-        <main>
-        <Form getSearchNameProp={this.getSearchName} />
-        <Recipes sendRecipesProp = {this.state.hitsArray}/>
-        </main>
+        <h1 className="App-title">Maggic eggs</h1>
+        <div>
+          <br/>
+          <Exemple/>
+          <br/>
+        </div>
+        <div>
+          <Reload/>
+        </div>
         </CardImgOverlay>
       
    </div>
