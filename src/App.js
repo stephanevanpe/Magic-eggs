@@ -7,6 +7,7 @@ import { Card, CardImgOverlay, CardImg } from 'reactstrap';
 
 import Exemple from './Card.js';
 import Reload from './Reload';
+import './fairyDustCursor';
 
 const APP_ID ="59a70ad4";
 const APP_KEY = "e277ba5dd5d7330c9716948c3fc87001";
@@ -84,7 +85,7 @@ class App extends Component {
       <Particles params={particelOps} style={{
                 width: '100%',height:'100%'}}/>
         <CardImgOverlay>
-        <h1 className="App-title">Maggic eggs</h1>
+        <h1 className="App-title">Magic eggs</h1>
         <div>
           <br/>
           <Exemple/>
